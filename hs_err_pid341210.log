@@ -1,46 +1,3 @@
-```
-$ siege -c 512 -r 100 http://localhost:9090/tasks
-```
-
-```
-20:34:58.459 [main] INFO com.io7m.loom_20200607.ExampleHTTPSystem - start
-20:35:16.597 [exHttpRequest[3]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.598 [exHttpRequest[7]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[9]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[12]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[4]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[5]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[10]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[11]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[6]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:16.597 [exHttpRequest[1]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-...
-20:35:17.374 [exHttpRequest[1898]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:17.374 [exHttpRequest[1899]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:17.374 [exHttpRequest[1900]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:17.375 [exHttpRequest[1901]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-20:35:17.376 [exHttpRequest[1902]] INFO com.io7m.loom_20200607.ExampleHTTPSystem - serve: 127.0.0.1
-#
-# A fatal error has been detected by the Java Runtime Environment:
-#
-#  SIGSEGV (0xb) at pc=0x00007f05450eef72, pid=341210, tid=341799
-#
-# JRE version: OpenJDK Runtime Environment (15.0) (build 15-internal+0-adhoc.jenkins.loom)
-# Java VM: OpenJDK 64-Bit Server VM (15-internal+0-adhoc.jenkins.loom, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
-# Problematic frame:
-# V  [libjvm.so+0x745f72]  frame::sender_for_interpreter_frame(RegisterMap*) const+0x32
-#
-# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h" (or dumping to /home/rm/git/com.github/io7m/loom-20200607/core.341210)
-#
-# An error report file with more information is saved as:
-# /home/rm/git/com.github/io7m/loom-20200607/hs_err_pid341210.log
-#
-# If you would like to submit a bug report, please visit:
-#   https://bugreport.java.com/bugreport/crash.jsp
-#
-```
-
-```
 #
 # A fatal error has been detected by the Java Runtime Environment:
 #
@@ -1064,7 +1021,7 @@ BIOS frequency limitation:
 Frequency switch latency (ns):
 0
 Available cpu frequencies:
-3600000 2800000 2200000
+3600000 2800000 2200000 
 Current governor:
 schedutil
 Core performance/turbo boost:
@@ -1075,4 +1032,3 @@ Memory: 4k page, physical 32868408k(2454708k free), swap 0k(0k free)
 vm_info: OpenJDK 64-Bit Server VM (15-internal+0-adhoc.jenkins.loom) for linux-amd64 JRE (15-internal+0-adhoc.jenkins.loom), built on Jun  7 2020 12:06:16 by "jenkins" with gcc 7.5.0
 
 END.
-```
